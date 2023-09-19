@@ -139,12 +139,16 @@ p{
     }
     p{
         font-size: 15px;
+        
     }
     .price{
         font-size: 15px;
+        top: 15px;
+        
     }
     .delete{
         font-size: 10px;
+        top: 15px;
     }
     .count{
         padding: 2px 4px;
