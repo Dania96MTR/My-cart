@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    position: relative;
+    box-sizing: border-box;
+    font-family: 'Cairo', sans-serif;
+}
+body{
+    background-color: #ffffff;
+}
+.main{
+    width: 80%;
+    margin-top: 5%;
+    
+}
+h1{
+    margin-bottom: 5px;
+    margin-left: 10%;
+}
+.border{
+    border-bottom: 5px solid #007BFF;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+}
+.shop{
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    justify-content: space-between;
+    background-color: color-mix(in srgb, #b3aeae 20%, white);
+    border: 1px solid rgba(50, 50, 50, 19.61%) ;
+    margin-top: 30px;
+}
+.show{
+    display: flex;
+    flex-direction: row;
+    gap: 17px;
+}
+.add{
+    right: 15px;
+}
+.btn{
+    left: 50px;
+    bottom:12px;
+}
+.circle{
+    border: 1px solid black;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    left: 13px;
+    top: 22px;
+    
+   
+}
+.x{
+    border: 1px solid #33363F ;
+    width: 14px;
+    left: 16px;
+    
+    
+}
+.x1{
+    rotate: 135deg;
+    top: 1px;
+}
+.x2{
+    rotate: 45deg;
+    bottom: 11px;
+}
+.count{
+    border: 1px solid rgba(50, 50, 50, 19.61%);
+    color: #000000;
+    background-color: color-mix(in srgb, #e2dddd 20%, white);;
+    font-size: 20px;
+    font-weight: bold;
+    font-family:'Glory';
+    padding: 2px 8px;
+    
+
+}
+.one{
+    left: 4px;
+    
+}
+.decrease{
+    left: 7px;
+}
+
+img{
+    width: 80px;
+    aspect-ratio: 1/1;
+    border: 1px solid rgba(50, 50, 50, 19.61%);
+    left: 10px;
+    top: 5px;
+}
+.text{
+    top: 2px;
+}
+p{
+    font-size: 20px;
+    color: #323232;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.price{
+    color: #28A745;
+    font-size: 20px;
+    font-weight: 700;
+
+}
+.delete{
+    color: #DC3545;
+    font-weight: 400;
+    font-size: 15px;
+}
