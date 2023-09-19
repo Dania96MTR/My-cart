@@ -51,8 +51,8 @@ h1{
 }
 .circle{
     border: 1px solid black;
-    width: 22px;
-    height: 22px;
+    width: 20px;
+    height: 20px;
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
@@ -94,7 +94,7 @@ h1{
     
 }
 .decrease{
-    left: 7px;
+    left: 8px;
 }
 
 img{
@@ -123,4 +123,35 @@ p{
     color: #DC3545;
     font-weight: 400;
     font-size: 15px;
+}
+@media screen and (max-width:600px) {
+    .main{
+        width: 90%;
+    }
+    .shop{
+        margin-left: 20px;
+        margin-right: 20px;
+        gap: 10px;
+        
+    }
+    .image{
+        margin: 0 auto;
+    }
+    p{
+        font-size: 15px;
+    }
+    .price{
+        font-size: 15px;
+    }
+    .delete{
+        font-size: 10px;
+    }
+    .count{
+        padding: 2px 4px;
+    }
+    .btn{
+        left: 33px;
+    }
+
+
 }
