@@ -1,7 +1,6 @@
 const btn1 = document.querySelector(".decrease")
 const btn2 = document.querySelector(".increase")
 const count = document.querySelector(".one")
-const mainCount = parseInt(count.textContent)
 
     for( let i = 1 ; i <= 9 ; i++){
 
