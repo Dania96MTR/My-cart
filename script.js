@@ -1,41 +1,59 @@
-const btn1 = document.querySelector(".decrease")
-const btn2 = document.querySelector(".increase")
-const count = document.querySelector(".one")
+const btn1 = document.querySelectorAll(".decrease")
+const btn2 = document.querySelectorAll(".increase")
 
-    for( let i = 1 ; i <= 9 ; i++){
-
-
-        let counter = 0
-    
-       btn1.addEventListener("click" , ()=>{
-            counter--;
-            count.textContent = counter ;
-            if(count.textContent >= 9){
-                count.textContent = 9
+btn2.forEach( btn => {
+    btn.addEventListener("click" , function(){
+        const currentamount = this.closest(".add").querySelector(".one")
+        const amountvalue = parseInt(currentamount.textContent)
         
-            } else if (count.textContent <=0 ){
-                count.textContent = 1
-            }
+          if (amountvalue <= 1 ){
+            currentamount.textContent = amountvalue
+        }
+        currentamount.textContent = amountvalue + 1
+        if(amountvalue >= 9){
+            currentamount.textContent = amountvalue
     
-        })
-        btn2.addEventListener("click" , () =>{
-            counter++;
-            count.textContent = counter ;
-            if(count.textContent >= 9){
-                count.textContent = 9
+        }
+
+
+
+    })
+})
+
+
+btn1.forEach( btn => {
+    btn.addEventListener("click" , function(){
+        const currentamount = this.closest(".add").querySelector(".one")
+        const amountvalue = parseInt(currentamount.textContent)
         
-            } else if (count.textContent <=0 ){
-                count.textContent = 1
-            }
+        if(amountvalue >= 9){
+            currentamount.textContent = amountvalue
     
-        })
+        } 
+        currentamount.textContent = amountvalue - 1
+
         
-    }
-   
+
+         if (amountvalue <= 1 ){
+            currentamount.textContent = amountvalue
+        }
 
 
 
-    
+    })
+})
+
+
+
+
+
+
+
+
+
+
+
+
 
     
 
